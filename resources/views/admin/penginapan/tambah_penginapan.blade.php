@@ -21,7 +21,7 @@
 @endsection
 
 @section('judul')
-  Tambah Konten
+  Tambah Penginapan
 @endsection
 
 @section('konten')
@@ -50,35 +50,50 @@
       <!-- general form elements -->
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">Tambah Konten</h3>
+          <h3 class="box-title">Tambah Penginapan</h3>
         </div><!-- /.box-header -->
         <!-- form start -->
         <form role="form" enctype="multipart/form-data" method="POST" action="{{ url('wisata/tambah') }}">
           <div class="box-body">
           	{{ csrf_field() }}
             <div class="form-group">
-              <label for="judul">Judul Konten</label>
+              <label for="judul">Nama Penginapan</label>
               <input type="text" class="form-control" name="judul" id="judul" placeholder="Masukkan Judul Konten">
             </div>
 
             <div class="form-group">
-              <label for="isi_konten">Isi Konten</label>
+              <label for="isi_konten">Alamat</label>
               <textarea class="form-control" name="isi" ></textarea>
             </div>
 
-			     <div class="form-group">
-              <label for="thumbnail">Thumbnail/Foto</label>
-              <input type="file" name="thumbnail"/>
-            </div>            
-
              <div class="form-group">
-              <label for="isi_konten">Alamat</label>
-              <textarea class="form-control" name="alamat" ></textarea>
+              <label for="permalink">Permalinks</label>
+              <input type="text" class="form-control" id="permalink" name="permalink" placeholder="Masukkan permalink/alamat url">
             </div>
 
             <div class="form-group">
-              <label for="permalink">Permalinks</label>
-              <input type="text" class="form-control" id="permalink" name="permalink" placeholder="Masukkan permalink/alamat url">
+              <label for="judul">Kapasitas</label>
+              <input type="text" class="form-control" name="judul" id="judul" placeholder="Masukkan Judul Konten">
+            </div>
+
+			     <div class="form-group">
+              <label for="thumbnail">URL_Gambar</label>
+              <input type="file" name="thumbnail"/>
+            </div>            
+
+            <div class="form-group">
+              <label for="desa">Desa</label>
+              <select class="form-control" name="desa">
+                @foreach($desa as $d)
+                  <option value="{{ $d->id }}">{{ $d->nama_desa }}</option>
+                @endforeach
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="judul">Kontak</label>
+              <input type="text" class="form-control" name="judul" id="judul" placeholder="Masukkan Judul Konten">
             </div>
 
             <div id="map-group">
@@ -108,9 +123,10 @@
 
 @section('script')
   <script>
-  $('#wisata').addClass('active');
-  $('#menuWisata').addClass('active');
-  $('#tambahWisata').addClass('active');
+  $('#penginapan').addClass('active');
+  $('#menuPenginapan').addClass('active');
+  $('#tambahPenginapan').addClass('active');
+
   var map;
   var location;
   var marker;

@@ -63,7 +63,7 @@
             <ul class="nav navbar-nav">
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="hidden-xs">{{$users->name}}</span>
+                  <span class="hidden-xs">{{Auth::user()->name}}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -100,29 +100,7 @@
           <!-- search form -->
         <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu">
-            <li class="header">Menu Utama</li>
-            <li class="active treeview">
-              <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Tempat Wisata</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu" id="menuWisata">
-                <li id="tambahWisata"><a href="{{ url('wisata/tambah') }}"><i class="fa fa-circle-o"></i> Tambah Tempat Wisata</a></li>
-                <li id="lihatWisata"><a href="{{ url('wisata/lihat') }}"><i class="fa fa-circle-o"></i> Lihat Tempat Wisata</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-files-o"></i>
-                <span>Pengelolaan User</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Tambah User</a></li>
-                <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Lihat User</a></li>
-              </ul>
-            </li>
-          </ul>
+          @include('admin.sidebar')
         </section>
         <!-- /.sidebar -->
       </aside>

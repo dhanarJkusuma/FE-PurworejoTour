@@ -74,7 +74,6 @@
               document.getElementById(divName).appendChild(newdiv);
               counter++;
          }
-
     }
 
   </script>
