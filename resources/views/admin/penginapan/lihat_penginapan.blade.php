@@ -32,11 +32,13 @@
     </div>
     <!-- /.box-header -->
     <div class="box-body">
-      <table id="data-desa" class="table table-bordered table-hover">
+      <table id="data-penginapan" class="table table-bordered table-hover">
         <thead>
         <tr>
           <th>Nomor</th>
-          <th>Nama Desa</th>
+          <th>Nama</th>
+          <th>Thumbnail</th>
+          <th>Dibuat</th>
           <th>Aksi</th>
         </tr>
         </thead>
@@ -55,7 +57,7 @@
 <div id="hapusDialog" class="modal fade" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog ">
     <div class="modal-content">
-      <form id="delete-form" action="{{ url('wisata/hapus') }}" method="POST">
+      <form id="delete-form" action="{{ route('hapusPenginapan') }}" method="POST">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Dialog Notifikasi</h4>
@@ -84,9 +86,9 @@
 @section('script')
 
 <script>
-    
-  $('#menuWisata').addClass('active');
-  $('#lihatWisata').addClass('active');
+  $('#penginapan').addClass('active');
+  $('#menuPenginapan').addClass('active');
+  $('#lihatPenginapan').addClass('active');
 
 
     $('body').delegate('.hapusDialog','click',function(){
@@ -95,8 +97,8 @@
     });
 
     $(function () {
-      $('#data-desa').DataTable({
-        "ajax": '{{ route('jsonDesa') }}',
+      $('#data-penginapan').DataTable({
+        "ajax": '{{ route('jsonPenginapan') }}',
         "paging": true,
         "lengthChange": false,
         "searching": false,
@@ -105,7 +107,9 @@
         "autoWidth": false,
         "columns": [
             { "data": "nomer" },
-            { "data": "nama_desa" },
+            { "data": "nama_penginapan" },
+            { "data": "gambar" },
+            { "data": "created_at" },
             { "data": "action" }
             ]
       });

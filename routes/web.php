@@ -49,4 +49,14 @@ Route::post('/dashboard/desa/destroy', ['as' => 'hapusDesa', 'uses' => 'DesaCont
 
 //Penginapan Route
 Route::get('/dashboard/penginapan/tambah', ['as' => 'tambahPenginapan', 'uses' => 'PenginapanController@insertView']);
-
+Route::post('/dashboard/penginapan/tambah', ['as' => 'pTambahPenginapan', 'uses' => 'PenginapanController@insert']);
+Route::get('/dashboard/penginapan/lihat', ['as' => 'lihatPenginapan', 'uses' => 'PenginapanController@index']);
+Route::get('/dashboard/penginapan/lihat/json', ['as' => 'jsonPenginapan', 'uses' => 'PenginapanController@getJson']);
+Route::get('/dashboard/penginapan/ubah/{id}', ['as' => 'ubahPenginapan', 'uses' => 'PenginapanController@updateView']);
+Route::post('/dashboard/penginapan/ubah/{id}', ['as' => 'pUbahPenginapan', 'uses' => 'PenginapanController@update']);
+Route::get('/dashboard/penginapan/detail/{id}', ['as' => 'detailPenginapan', 'uses' => 'PenginapanController@getDetail']);
+Route::post('/dashboard/penginapan/hapus', ['as' => 'hapusPenginapan', 'uses' => 'PenginapanController@destroy']);
+Route::post('/dashboard/penginapan/gallery/{id}/delete', ['as' => 'hapusGaleri', 'uses' => 'PenginapanController@destroyGallery']);
+Route::get('/dashboard/penginapan/gallery/{id}/tambah', ['as' => 'tambahPenginapanGallery', 'uses' => 'PenginapanController@insertGalleryView'])->where('id', '[0-9]+');;
+Route::post('/dashboard/penginapan/gallery/{id}/tambah', ['as' => 'pTambahPenginapanGallery', 'uses' => 'PenginapanController@insertGallery'])->where('id', '[0-9]+');;
+Route::get('/dashboard/penginapan/gallery/{id}', ['as' => 'ambilGaleriPenginapan', 'uses' => 'PenginapanController@getGallery']);

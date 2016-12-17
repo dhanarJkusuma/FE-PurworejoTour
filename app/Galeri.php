@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Galeri extends Model
 {
     protected $table = 'gallery';
-    protected $primaryKey = 'id_photo';
+    protected $primaryKey = 'id';
 
     public function Konten()
     {

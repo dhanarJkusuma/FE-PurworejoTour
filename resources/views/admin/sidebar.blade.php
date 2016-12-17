@@ -28,7 +28,7 @@
     </a>
     <ul class="treeview-menu" id="menuPenginapan">
       <li id="tambahPenginapan"><a href="{{ route('tambahPenginapan') }}"><i class="fa fa-circle-o"></i> Tambah Penginapan</a></li>
-      <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Lihat Data Penginapan</a></li>
+      <li id="lihatPenginapan"><a href="{{ route('lihatPenginapan') }}"><i class="fa fa-circle-o"></i> Lihat Data Penginapan</a></li>
     </ul>
   </li>
   <li class="treeview">
