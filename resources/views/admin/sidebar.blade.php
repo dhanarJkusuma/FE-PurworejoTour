@@ -1,5 +1,11 @@
 <ul class="sidebar-menu">
   <li class="header">Menu Utama</li>
+  <li id="dashboard">
+    <a href="{{ route('index') }}">
+      <i class="fa fa-dashboard"></i> <span>Dashboard</span> 
+    </a>
+    
+  </li>
   <li id="wisata" class="treeview">
     <a href="#">
       <i class="fa fa-dashboard"></i> <span>Tempat Wisata</span> <i class="fa fa-angle-left pull-right"></i>

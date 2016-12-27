@@ -19,8 +19,9 @@ Route::get('/detail',function(){
 Route::get('/detail/{permalink}',['as' => 'DetailKonten','uses' => 'PengunjungController@detail']);
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-Route::get('/dashboard','AdminController@dashboard');
+//Route::get('/home', 'HomeController@index');
+Route::get('/dashboard',['as' => 'index', 'uses' => 'AdminController@dashboard']);
+
 Route::get('/wisata','AdminController@tampil_objek_wisata');
 Route::get('/wisata/tambah',['as' => 'TampilanTambahKonten', 'uses' => 'KontenController@tampilan_tambah']);
 Route::post('/wisata/tambah',['as' => 'ProsesTambahKonten', 'uses' => 'KontenController@proses_tambah']);
