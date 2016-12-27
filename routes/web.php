@@ -60,3 +60,8 @@ Route::post('/dashboard/penginapan/gallery/{id}/delete', ['as' => 'hapusGaleri',
 Route::get('/dashboard/penginapan/gallery/{id}/tambah', ['as' => 'tambahPenginapanGallery', 'uses' => 'PenginapanController@insertGalleryView'])->where('id', '[0-9]+');;
 Route::post('/dashboard/penginapan/gallery/{id}/tambah', ['as' => 'pTambahPenginapanGallery', 'uses' => 'PenginapanController@insertGallery'])->where('id', '[0-9]+');;
 Route::get('/dashboard/penginapan/gallery/{id}', ['as' => 'ambilGaleriPenginapan', 'uses' => 'PenginapanController@getGallery']);
+
+//frond end route
+
+
+//end frond end route
