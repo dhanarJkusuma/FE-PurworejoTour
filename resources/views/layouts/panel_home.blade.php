@@ -60,43 +60,11 @@
                   <div class="row">
                     <div class="col-xs-12">
                       <ul class="nav navbar-nav">
-                        <li><a href="home.html">All pages</a>
+                        <li><a href="/">Home</a>
 
-                            <ul class="dropdown-menu">
-
-
-                            <li><a href="home.html">HOMEPAGE </a>
-                              <ul class="dropdown-menu">
-                               <li><a href="home.html">HOMEPAGE 1</a></li>
-                              <li><a href="home-2.html">HOMEPAGE 2</a></li>
-                              <li><a href="home-3.html">HOMEPAGE 3</a></li>
-                             </ul>
-                            </li>
-
-
-                                <li><a href="category.html">NEWS </a>
-                              <ul class="dropdown-menu">
-                                   <li><a href="category.html">Blog page</a></li>
-                               <li><a href="news_details-1.html">news details 1</a></li>
-                              <li><a href="news_details-2.html">news details 2</a></li>
-                              <li><a href="news_details-3.html">news details 3</a></li>
-                             </ul>
-                            </li>
-
-
-                                <li><a href="about.html">pages </a>
-                              <ul class="dropdown-menu">
-                               <li><a href="about.html">ABOUT</a></li>
-                              <li><a href="contacts.html">CONTACT</a></li>
-                              <li><a href="typography.html">typography</a></li>
-                             </ul>
-                            </li>
-
-
-
-                          </ul>
+                            
                         </li>
-                        <li class="yamm-fw"><a href="home.html">Health</a>
+                        <li class="yamm-fw"><a href="home.html">Tempat wisata</a>
                           <ul class="dropdown-menu">
                             <li>
                               <div class="yamm-content">
@@ -156,7 +124,7 @@
                             </li>
                           </ul>
                         </li>
-                        <li class="yamm-fw"><a href="home.html">technology</a>
+                        <li class="yamm-fw"><a href="home.html">Kuliber</a>
                           <ul class="dropdown-menu">
                             <li>
                               <div class="yamm-content">
@@ -216,7 +184,7 @@
                             </li>
                           </ul>
                         </li>
-                        <li class="yamm-fw"><a href="home.html">politics</a>
+                        <li class="yamm-fw"><a href="home.html">Penginapan</a>
                           <ul class="dropdown-menu">
                             <li>
                               <div class="yamm-content">
@@ -537,7 +505,7 @@
                 <button type="button" class="search-close close"><i class="fa fa-times"></i></button>
               </div>
             </nav>
-            
+
   @yield('content')
 
   <footer class="footer">
