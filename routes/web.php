@@ -64,5 +64,5 @@ Route::get('/dashboard/penginapan/gallery/{id}', ['as' => 'ambilGaleriPenginapan
 
 //frond end route
 
-
+//ini komentar
 //end frond end route
