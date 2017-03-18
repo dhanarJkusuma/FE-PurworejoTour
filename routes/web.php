@@ -11,7 +11,7 @@
 |
 */
 Route::get('/konten/test','KontenController@test');
-Route::get('/',['as' => 'PengunjungAwal','uses' => 'PengunjungController@index']);
+
 Route::get('/logout','AdminController@logout');
 Route::get('/detail',function(){
 	return view('pengunjung.single_detail_layout');
@@ -63,6 +63,6 @@ Route::post('/dashboard/penginapan/gallery/{id}/tambah', ['as' => 'pTambahPengin
 Route::get('/dashboard/penginapan/gallery/{id}', ['as' => 'ambilGaleriPenginapan', 'uses' => 'PenginapanController@getGallery']);
 
 //frond end route
+Route::get('/',['as' => 'PengunjungAwal','uses' => 'PengunjungController@index']);
 
-//ini komentar
 //end frond end route

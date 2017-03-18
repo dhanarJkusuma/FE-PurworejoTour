@@ -12,7 +12,7 @@ class PengunjungController extends Controller
     public function index()
     {
     	$wisata = Konten::all();
-    	return view('pengunjung.home')->with('wisata',$wisata);
+    	return view('front.home')->with('wisata',$wisata);
     }
 
     public function detail($permalink)
