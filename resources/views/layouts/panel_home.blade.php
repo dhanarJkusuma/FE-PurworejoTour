@@ -20,6 +20,10 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   </head>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
   <body>
     <!-- Loader-->
     <div id="page-preloader"><span class="spinner"></span></div>
@@ -61,10 +65,60 @@
                     <div class="col-xs-12">
                       <ul class="nav navbar-nav">
                         <li><a href="/">Home</a>
-
                             
                         </li>
                         <li class="yamm-fw"><a href="home.html">Tempat wisata</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <div class="yamm-content">
+                                <div class="row">
+                                  
+                                  <div class="col-md-4 col-sm-6">
+                                    <article class="post post-4 post-4_mod-a clearfix">
+                                      <div class="entry-media"><a href="assets/media/content/post/360x280/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x280/1.jpg" alt="Foto" class="img-responsive"/></a></div>
+                                      <div class="entry-main">
+                                        <div class="entry-header">
+                                          <h2 class="entry-title">Lorem ipsum dolor sit amet</h2>
+                                        </div>
+                                        <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">38 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">62</a></span></div>
+                                      </div>
+                                    </article>
+                                  </div>
+                                  <div class="col-md-8 col-xs-12">
+                                    <article class="post post-3 post-3_mod-f clearfix">
+                                      <div class="entry-media"><a href="assets/media/content/post/100x80/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/1.jpg" alt="Foto" class="img-responsive"/></a></div>
+                                      <div class="entry-main">
+                                        <div class="entry-header">
+                                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
+                                        </div>
+                                        <div class="entry-meta"><span class="category color-4">Entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">4</a></span></div>
+                                      </div>
+                                    </article>
+                                    <article class="post post-3 post-3_mod-f clearfix">
+                                      <div class="entry-media"><a href="assets/media/content/post/100x80/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/2.jpg" alt="Foto" class="img-responsive"/></a></div>
+                                      <div class="entry-main">
+                                        <div class="entry-header">
+                                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
+                                        </div>
+                                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">91</a></span></div>
+                                      </div>
+                                    </article>
+                                    <article class="post post-3 post-3_mod-f clearfix">
+                                      <div class="entry-media"><a href="assets/media/content/post/100x80/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/3.jpg" alt="Foto" class="img-responsive"/></a></div>
+                                      <div class="entry-main">
+                                        <div class="entry-header">
+                                          <h2 class="entry-title"><a href="news_details-1.html">Sed eiusmod tempor incid magna aliqua enim</a></h2>
+                                        </div>
+                                        <div class="entry-meta"><span class="category color-3">lifestyle</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">54</a></span></div>
+                                      </div>
+                                    </article>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="yamm-fw"><a href="home.html">Kuliner</a>
                           <ul class="dropdown-menu">
                             <li>
                               <div class="yamm-content">
@@ -124,7 +178,7 @@
                             </li>
                           </ul>
                         </li>
-                        <li class="yamm-fw"><a href="home.html">Kuliber</a>
+                        <li class="yamm-fw"><a href="home.html">Desa</a>
                           <ul class="dropdown-menu">
                             <li>
                               <div class="yamm-content">
@@ -244,246 +298,6 @@
                             </li>
                           </ul>
                         </li>
-                        <li class="yamm-fw"><a href="home.html">entertainment</a>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <div class="yamm-content">
-                                <div class="row">
-                                  <div class="col-md-4 col-sm-6">
-                                    <ul class="list list-mark-1 list-mark-1_mod-a">
-                                      <li><a href="category.html">Asia & europe</a></li>
-                                      <li><a href="category.html">festival games</a></li>
-                                      <li><a href="category.html">world organizations</a></li>
-                                      <li><a href="category.html">africa & middle east</a></li>
-                                      <li><a href="category.html">pakistan & india</a></li>
-                                      <li><a href="category.html">usa & canada</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="col-md-4 col-sm-6">
-                                    <article class="post post-4 post-4_mod-a clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/360x280/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x280/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title">Lorem ipsum dolor sit amet</h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">38 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">62</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                  <div class="col-md-4 col-xs-12">
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-4">Entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">4</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/2.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">91</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/3.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Sed eiusmod tempor incid magna aliqua enim</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-3">lifestyle</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">54</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="yamm-fw "><a href="home.html">lifestyle</a>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <div class="yamm-content">
-                                <div class="row">
-                                  <div class="col-md-4 col-sm-6">
-                                    <ul class="list list-mark-1 list-mark-1_mod-a">
-                                      <li><a href="category.html">Asia & europe</a></li>
-                                      <li><a href="category.html">festival games</a></li>
-                                      <li><a href="category.html">world organizations</a></li>
-                                      <li><a href="category.html">africa & middle east</a></li>
-                                      <li><a href="category.html">pakistan & india</a></li>
-                                      <li><a href="category.html">usa & canada</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="col-md-4 col-sm-6">
-                                    <article class="post post-4 post-4_mod-a clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/360x280/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x280/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title">Lorem ipsum dolor sit amet</h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">38 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">62</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                  <div class="col-md-4 col-xs-12">
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-4">Entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">4</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/2.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">91</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/3.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Sed eiusmod tempor incid magna aliqua enim</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-3">lifestyle</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">54</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="yamm-fw"><a href="home.html">Sports</a>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <div class="yamm-content">
-                                <div class="row">
-                                  <div class="col-md-4 col-sm-6">
-                                    <ul class="list list-mark-1 list-mark-1_mod-a">
-                                      <li><a href="category.html">Asia & europe</a></li>
-                                      <li><a href="category.html">festival games</a></li>
-                                      <li><a href="category.html">world organizations</a></li>
-                                      <li><a href="category.html">africa & middle east</a></li>
-                                      <li><a href="category.html">pakistan & india</a></li>
-                                      <li><a href="category.html">usa & canada</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="col-md-4 col-sm-6">
-                                    <article class="post post-4 post-4_mod-a clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/360x280/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x280/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title">Lorem ipsum dolor sit amet</h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">38 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">62</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                  <div class="col-md-4 col-xs-12">
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-4">Entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">4</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/2.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">91</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/3.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Sed eiusmod tempor incid magna aliqua enim</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-3">lifestyle</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">54</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="yamm-fw" ><a href="home.html">travel</a>
-                          <ul class="dropdown-menu" >
-                            <li>
-                              <div class="yamm-content">
-                                <div class="row">
-                                  <div class="col-md-4 col-sm-6">
-                                    <ul class="list list-mark-1 list-mark-1_mod-a">
-                                      <li><a href="category.html">Asia & europe</a></li>
-                                      <li><a href="category.html">festival games</a></li>
-                                      <li><a href="category.html">world organizations</a></li>
-                                      <li><a href="category.html">africa & middle east</a></li>
-                                      <li><a href="category.html">pakistan & india</a></li>
-                                      <li><a href="category.html">usa & canada</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="col-md-4 col-sm-6">
-                                    <article class="post post-4 post-4_mod-a clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/360x280/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/360x280/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title">Lorem ipsum dolor sit amet</h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="entry-meta__item"><a href="news_details-1.html" class="entry-meta__link">38 mins ago</a></span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">62</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                  <div class="col-md-4 col-xs-12">
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/1.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/1.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Volupta tem acusa ntium dolore me laud</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-4">Entertainment</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">4</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/2.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/2.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Incididunt ulabore dolore malnu alikua</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-5">world</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">91</a></span></div>
-                                      </div>
-                                    </article>
-                                    <article class="post post-3 post-3_mod-f clearfix">
-                                      <div class="entry-media"><a href="assets/media/content/post/100x80/3.jpg" class="prettyPhoto"><img src="assets/media/content/post/100x80/3.jpg" alt="Foto" class="img-responsive"/></a></div>
-                                      <div class="entry-main">
-                                        <div class="entry-header">
-                                          <h2 class="entry-title"><a href="news_details-1.html">Sed eiusmod tempor incid magna aliqua enim</a></h2>
-                                        </div>
-                                        <div class="entry-meta"><span class="category color-3">lifestyle</span><span class="entry-meta__item"><i class="icon pe-7s-comment"></i><a href="news_details-1.html" class="entry-meta__link">54</a></span></div>
-                                      </div>
-                                    </article>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -506,7 +320,7 @@
               </div>
             </nav>
 
->>>>>>> origin/master
+
   @yield('content')
 
   <footer class="footer">

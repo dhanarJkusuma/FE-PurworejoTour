@@ -64,5 +64,5 @@ Route::get('/dashboard/penginapan/gallery/{id}', ['as' => 'ambilGaleriPenginapan
 
 //frond end route
 Route::get('/',['as' => 'PengunjungAwal','uses' => 'PengunjungController@index']);
-
+// Route::get('/login','Auth\LoginController@login');
 //end frond end route
