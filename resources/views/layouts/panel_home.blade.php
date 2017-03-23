@@ -20,9 +20,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
   </head>
-<<<<<<< HEAD
-  
-=======
   <body>
     <!-- Loader-->
     <div id="page-preloader"><span class="spinner"></span></div>
