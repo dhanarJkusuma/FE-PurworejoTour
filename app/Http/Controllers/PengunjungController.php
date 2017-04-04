@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\Konten;
+use App\TempatWisata;
 use App\Galeri;
 class PengunjungController extends Controller
 {
     public function index()
     {
-    	$wisata = Konten::all();
+    	$wisata = TempatWisata::all();
     	return view('front.home')->with('wisata',$wisata);
     }
 
