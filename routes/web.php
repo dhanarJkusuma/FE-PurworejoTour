@@ -19,9 +19,13 @@ Route::get('/detail',function(){
 Route::get('/detail/{permalink}',['as' => 'DetailKonten','uses' => 'PengunjungController@detail']);
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index');
-Route::get('/dashboard',['as' => 'index', 'uses' => 'AdminController@dashboard']);
+//menu route
 
+//dashboard route
+Route::get('/dashboard',['as' => 'index', 'uses' => 'AdminController@dashboard']);
+//end dashboard route
+
+//wisata route
 Route::get('/wisata','AdminController@tampil_objek_wisata');
 Route::get('/wisata/tambah',['as' => 'TampilanTambahKonten', 'uses' => 'KontenController@tampilan_tambah']);
 Route::post('/wisata/tambah',['as' => 'ProsesTambahKonten', 'uses' => 'KontenController@proses_tambah']);
@@ -37,16 +41,19 @@ Route::post('/wisata/galeri/{id}/tambah',['as' => 'ProsesTambahGaleri' , 'uses' 
 Route::get('/wisata/galeri/{id}/ubah','GaleriController@tampilan_ubah');
 Route::get('/wisata/galeri/{id}/lihat',['as' => 'LihatGaleri', 'uses' => 'GaleriController@ambil_galeri']);
 Route::post('/wisata/galeri/hapus/',['as' => 'HapusGaleri', 'uses' => 'GaleriController@hapus_galeri']);
+//end wisata route
 
-//Desa Route
-Route::get('/dashboard/desa/tambah', ['as' => 'tambahDesa', 'uses' => 'DesaController@insertView']);
-Route::post('/dashboard/desa/tambah', ['as' => 'pTambahDesa','uses' => 'DesaController@insert']);
-Route::get('/dashboard/desa/lihat', ['as' => 'lihatDesa', 'uses' => 'DesaController@index']);
-Route::get('/dashboard/desa/lihat/json', ['as' => 'jsonDesa', 'uses' => 'DesaController@getJson']);
-Route::get('/dashboard/desa/ubah/{id}', ['as' => 'ubahDesa', 'uses' => 'DesaController@updateView']);
-Route::post('/dashboard/desa/ubah/{id}', ['as' => 'pUbahDesa', 'uses' => 'DesaController@update']);
-Route::post('/dashboard/desa/destroy', ['as' => 'hapusDesa', 'uses' => 'DesaController@destroy']);
-//End Desa Route
+//kuliner route
+Route::get('/kuliner','AdminController@tampil_objek_kuliner');
+Route::get('/kuliner/tambah','KulinerController@tampilan_tambah');
+Route::post('/kuliner/tambah','KulinerController@proses_tambah');
+Route::get('/kuliner/lihat','KulinerController@lihat_konten');
+Route::get('/kuliner/lihat/json','KulinerController@ambil_json');
+Route::get('/kuliner/ubah/{id}','KulinerController@tampilan_ubah');
+Route::post('/kuliner/ubah/{id}','KulinerController@proses_ubah');
+Route::post('/kuliner/hapus','KulinerController@hapus');
+Route::get('/kuliner/detil/{id}','KulinerController@detil_konten');
+//kuliner route
 
 //Penginapan Route
 Route::get('/dashboard/penginapan/tambah', ['as' => 'tambahPenginapan', 'uses' => 'PenginapanController@insertView']);
@@ -61,6 +68,17 @@ Route::post('/dashboard/penginapan/gallery/{id}/delete', ['as' => 'hapusGaleri',
 Route::get('/dashboard/penginapan/gallery/{id}/tambah', ['as' => 'tambahPenginapanGallery', 'uses' => 'PenginapanController@insertGalleryView'])->where('id', '[0-9]+');;
 Route::post('/dashboard/penginapan/gallery/{id}/tambah', ['as' => 'pTambahPenginapanGallery', 'uses' => 'PenginapanController@insertGallery'])->where('id', '[0-9]+');;
 Route::get('/dashboard/penginapan/gallery/{id}', ['as' => 'ambilGaleriPenginapan', 'uses' => 'PenginapanController@getGallery']);
+//end penginapan route
+
+//Desa Route
+Route::get('/dashboard/desa/tambah', ['as' => 'tambahDesa', 'uses' => 'DesaController@insertView']);
+Route::post('/dashboard/desa/tambah', ['as' => 'pTambahDesa','uses' => 'DesaController@insert']);
+Route::get('/dashboard/desa/lihat', ['as' => 'lihatDesa', 'uses' => 'DesaController@index']);
+Route::get('/dashboard/desa/lihat/json', ['as' => 'jsonDesa', 'uses' => 'DesaController@getJson']);
+Route::get('/dashboard/desa/ubah/{id}', ['as' => 'ubahDesa', 'uses' => 'DesaController@updateView']);
+Route::post('/dashboard/desa/ubah/{id}', ['as' => 'pUbahDesa', 'uses' => 'DesaController@update']);
+Route::post('/dashboard/desa/destroy', ['as' => 'hapusDesa', 'uses' => 'DesaController@destroy']);
+//End Desa Route
 
 //frond end route
 Route::get('/',['as' => 'PengunjungAwal','uses' => 'PengunjungController@index']);

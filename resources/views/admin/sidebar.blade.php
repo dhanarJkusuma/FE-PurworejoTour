@@ -15,17 +15,16 @@
       <li id="lihatWisata"><a href="{{ url('wisata/lihat') }}"><i class="fa fa-circle-o"></i> Lihat Tempat Wisata</a></li>
     </ul>
   </li>
-  <li id="desa" class="treeview">
+  <li id="kuliner" class="treeview">
     <a href="#">
-      <i class="fa fa-home"></i>
-      <span>Desa</span>
-      <i class="fa fa-angle-left pull-right"></i>
+      <i class="fa fa-dashboard"></i> <span>Kuliner</span> <i class="fa fa-angle-left pull-right"></i>
     </a>
-    <ul class="treeview-menu" id="menuDesa">
-      <li id="tambahDesa"><a href="{{ route('tambahDesa') }}"><i class="fa fa-circle-o"></i> Tambah Desa</a></li>
-      <li id="lihatDesa"><a href="{{ route('lihatDesa') }}"><i class="fa fa-circle-o"></i> Lihat Data Desa</a></li>
+    <ul class="treeview-menu" id="menuKuliner">
+      <li id="tambahKuliner"><a href="{{ url('kuliner/tambah') }}"><i class="fa fa-circle-o"></i> Tambah Kuliner</a></li>
+      <li id="lihatKuliner"><a href="{{ url('kuliner/lihat') }}"><i class="fa fa-circle-o"></i> Lihat Kuliner</a></li>
     </ul>
   </li>
+  
   <li id="penginapan" class="treeview">
     <a href="#">
       <i class="fa fa-hotel"></i>
@@ -35,6 +34,17 @@
     <ul class="treeview-menu" id="menuPenginapan">
       <li id="tambahPenginapan"><a href="{{ route('tambahPenginapan') }}"><i class="fa fa-circle-o"></i> Tambah Penginapan</a></li>
       <li id="lihatPenginapan"><a href="{{ route('lihatPenginapan') }}"><i class="fa fa-circle-o"></i> Lihat Data Penginapan</a></li>
+    </ul>
+  </li>
+  <li id="desa" class="treeview">
+    <a href="#">
+      <i class="fa fa-home"></i>
+      <span>Desa</span>
+      <i class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu" id="menuDesa">
+      <li id="tambahDesa"><a href="{{ route('tambahDesa') }}"><i class="fa fa-circle-o"></i> Tambah Desa</a></li>
+      <li id="lihatDesa"><a href="{{ route('lihatDesa') }}"><i class="fa fa-circle-o"></i> Lihat Data Desa</a></li>
     </ul>
   </li>
   <li class="treeview">
