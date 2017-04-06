@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Konten;
 use App\Galeri;
+use App\TempatWisata;
 use Auth;
 use Illuminate\Support\Facades\Input;
 use Image;
@@ -21,7 +22,7 @@ class GaleriController extends Controller
     {
         $user = Auth::User();
         $columns = array('id','judul_konten');
-        $wisata = Konten::where('id','=',$id)->first();
+        $wisata = TempatWisata::where('id','=',$id)->first();
         // echo $wisata->id;
         return view('admin.galeri.tambah_galeri')->with('wisata',$wisata)->with('users',$user);
     }

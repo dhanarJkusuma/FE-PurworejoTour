@@ -26,21 +26,28 @@ Route::get('/dashboard',['as' => 'index', 'uses' => 'AdminController@dashboard']
 //end dashboard route
 
 //wisata route
+Route::group(['prefix' => 'wisata'], function () {
+    Route::get('/',['as' => 'TampilanTempatWisata', 'uses' => 'TempatWisataController@tampil_objek_wisata']);
+    Route::get('/tambah',['as' => 'TampilanTambahKonten', 'uses' => 'TempatWisataController@tampilanTambah']);
+	Route::post('/tambah',['as' => 'ProsesTambahKonten', 'uses' => 'TempatWisataController@prosesTambah']);
+	Route::get('/lihat',['as' => 'LihatKonten','uses' => 'KontenController@lihat_konten']);
+	Route::get('/lihat/json',['as' => 'JsonKonten','uses' => 'KontenController@ambil_json']);
+	Route::get('/ubah/{id}',['as' => 'TampilanUbahKonten', 'uses' => 'KontenController@tampilan_ubah']);
+	Route::post('/ubah/{id}',['as' => 'ProsesUbahKonten', 'uses' => 'KontenController@proses_ubah']);
+	Route::post('/hapus',['as' => 'HapusKonten','uses' => 'KontenController@hapus']);
+	Route::get('/detil/{id}', ['as' => 'DetilKonten', 'uses' => 'KontenController@detil_konten']);
+	Route::get('/galeri/{id}/tambah',['as' => 'TampilanTambahGaleri' , 'uses' => 'GaleriController@tampilan_tambah']);
+	Route::get('/galeri/{id}/tambah/galeri',['as' => 'TampilanTambahGaleri' , 'uses' => 'GaleriController@tampilan_tambah']);
+	Route::post('/galeri/{id}/tambah',['as' => 'ProsesTambahGaleri' , 'uses' => 'GaleriController@tambah_galeri']);
+	Route::get('/galeri/{id}/ubah','GaleriController@tampilan_ubah');
+	Route::get('/galeri/{id}/lihat',['as' => 'LihatGaleri', 'uses' => 'GaleriController@ambil_galeri']);
+	Route::post('/galeri/hapus/',['as' => 'HapusGaleri', 'uses' => 'GaleriController@hapus_galeri']);
+});
+
+
 Route::get('/wisata','AdminController@tampil_objek_wisata');
-Route::get('/wisata/tambah',['as' => 'TampilanTambahKonten', 'uses' => 'KontenController@tampilan_tambah']);
-Route::post('/wisata/tambah',['as' => 'ProsesTambahKonten', 'uses' => 'KontenController@proses_tambah']);
-Route::get('/wisata/lihat',['as' => 'LihatKonten','uses' => 'KontenController@lihat_konten']);
-Route::get('/wisata/lihat/json',['as' => 'JsonKonten','uses' => 'KontenController@ambil_json']);
-Route::get('/wisata/ubah/{id}',['as' => 'TampilanUbahKonten', 'uses' => 'KontenController@tampilan_ubah']);
-Route::post('/wisata/ubah/{id}',['as' => 'ProsesUbahKonten', 'uses' => 'KontenController@proses_ubah']);
-Route::post('/wisata/hapus',['as' => 'HapusKonten','uses' => 'KontenController@hapus']);
-Route::get('/wisata/detil/{id}', ['as' => 'DetilKonten', 'uses' => 'KontenController@detil_konten']);
-Route::get('/wisata/galeri/{id}/tambah',['as' => 'TampilanTambahGaleri' , 'uses' => 'GaleriController@tampilan_tambah']);
-Route::get('/wisata/galeri/{id}/tambah/galeri',['as' => 'TampilanTambahGaleri' , 'uses' => 'GaleriController@tampilan_tambah']);
-Route::post('/wisata/galeri/{id}/tambah',['as' => 'ProsesTambahGaleri' , 'uses' => 'GaleriController@tambah_galeri']);
-Route::get('/wisata/galeri/{id}/ubah','GaleriController@tampilan_ubah');
-Route::get('/wisata/galeri/{id}/lihat',['as' => 'LihatGaleri', 'uses' => 'GaleriController@ambil_galeri']);
-Route::post('/wisata/galeri/hapus/',['as' => 'HapusGaleri', 'uses' => 'GaleriController@hapus_galeri']);
+
+
 //end wisata route
 
 //kuliner route
