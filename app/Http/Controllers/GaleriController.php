@@ -40,13 +40,14 @@ class GaleriController extends Controller
     {
         $galleries = $request->file('galleries');
         $num = 1;
-        foreach ($galleries as $gallery) 
+
+        for ($i=1;$i<=2;$i++) 
         {	
         	$galeri = new Galeri;
-        	$destination_path = base_path() . "/public/konten/gallery";
+        	$destination_path = base_path() . "/public/wisata/gallery";
             $filename = 'galeri' . date('YmdHis') . $num  . '.' . $gallery->getClientOriginalExtension();
             $gallery->move($destination_path,$filename);
-            Image::make(url('konten/gallery'). "/" . $filename)->fit(400,300)->save($destination_path."/".$filename);	
+            Image::make(url('wisata/gallery'). "/" . $filename)->fit(400,300)->save($destination_path."/".$filename);	
             $galeri->nama_photo = $filename;
             $galeri->id_konten = $id;
             $galeri->save();

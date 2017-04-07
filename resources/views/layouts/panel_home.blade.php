@@ -18,7 +18,7 @@
     <link href="{{URL::asset('assets/plugins/switcher/css/color4.css')}}" rel="alternate stylesheet" title="color4" media="all"/>
     <link href="{{URL::asset('assets/plugins/switcher/css/color5.css')}}" rel="alternate stylesheet" title="color5" media="all"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document. documentElement)</script>
   </head>
 
   <body>

@@ -5,12 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
 use Auth;
-
 use App\User;
 use App\TempatWisata; 
-
+use Image;
 use Illuminate\Support\Facades\Input;
 
 class TempatWisataController extends Controller
@@ -28,18 +26,18 @@ class TempatWisataController extends Controller
     public function prosesTambah(Request $request)
     {
     	$judul = Input::get('judul');
-    	$slug = str_slug($judul, '-');
+    	$slug = str_slug(request('judul'));
     	$TempatWisata = new TempatWisata;
     	$TempatWisata->nama_tempat = $judul;
     	$TempatWisata->isi_konten = Input::get('isi');
     	$TempatWisata->id_user = Auth::user()->id;
 
-    	if($request->hasFile('thumbnail'))
+    	if($request->hasFile('foto'))
     	{
     		$destination_path = base_path() . "/public/wisata/thumbnail";
-    		$filename = $slug . '.' . $request->file('thumbnail')->getClientOriginalExtension();
-    		$request->file('thumbnail')->move($destination_path,$filename);
-    		$konten->thumbnail = $filename;
+    		$filename = $slug . '.' . $request->file('foto')->getClientOriginalExtension();
+    		$request->file('foto')->move($destination_path,$filename);
+    		$TempatWisata->foto1 = $filename;
     		Image::make(url('wisata/thumbnail'). "/" . $filename)->fit(200,200)->save($destination_path."/".$filename);
     	}
 
